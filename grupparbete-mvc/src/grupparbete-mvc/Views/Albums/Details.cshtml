@@ -1,0 +1,15 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>@ViewBag.Album.Title</h1>
+    <h2>Tracks</h2>
+    <ol>
+        @foreach (var track in ViewBag.Album.Tracks)
+        {
+            <li>@track.Name @track.Length</li>
+        }
+    </ol>
+</body>
+</html>

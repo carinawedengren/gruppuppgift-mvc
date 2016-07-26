@@ -1,0 +1,20 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+        @ViewBag.Band.Name
+
+    </title>
+</head>
+<body>
+    <h1>
+        @ViewBag.Band.Name albums.
+    </h1>
+    <ol>
+        @for (int i=0;i<ViewBag.Albums.Count;i++)
+        {
+            <li><a href="details/@i">@ViewBag.Albums[i].Title</a> (@ViewBag.Albums[i].Year)</li>
+        }
+
+    </ol>
+</body>
+</html>

@@ -9,6 +9,7 @@ namespace grupparbete_mvc.Models
     {
         public string Title { get; set; }
         public int Year { get; set; }
+        public List<Track> Tracks{ get; set; }
 
     }
 }
