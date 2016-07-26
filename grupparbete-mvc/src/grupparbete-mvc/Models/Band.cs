@@ -7,5 +7,8 @@ namespace grupparbete_mvc.Models
 {
     public class Band
     {
+        public string Name { get; set; }
+        public string Description { get; set; }
+
     }
 }
